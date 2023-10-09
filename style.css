@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contains{
+    width:400px;
+    border:1px solid;
+    border-color: black;
+    background-color: rgb(35, 233, 233);
+}
+.object{
+    height: 50px;
+    width:350px;
+    border:1px dotted;
+    border-radius: 5px;
+    border-color: rgb(99, 5, 239);
+    margin:20px;
+    padding-top:25px;
+    text-align: center;
+    
+}
