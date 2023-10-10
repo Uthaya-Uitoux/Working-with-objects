@@ -9,11 +9,16 @@
 <body>
     <div class="container">
         <div class="contains">
-        <div class="object" id="object_values"></div>
-        <input type="email" id="object_mail" class="mail" placeholder="Enter the mail ID">
-        <button class = btn onclick="addMail()">Email Addition</button>
-        <button class = btn onclick="deleteCity()">Delete City</button>
-        <button class = btn onclick="ageProperty()">Property verify</button>
+            <div class="obj-wrap" id="wrapper">
+                <div class="obj-item">FirstName: <div id="firstNameValue" class="obj-value"></div></div>
+                <div class="obj-item">Age: <div id="ageValue" class="obj-value"></div></div>
+                <div class="obj-item">City: <div id="cityValue" class="obj-value"></div></div>
+            </div>
+            <div class="object" id="object_values"></div>
+            <input type="email" id="object_mail" class="mailValue" placeholder="Enter the mail ID">
+            <button class = btn onclick="addMail()">Email Addition</button>
+            <button class = btn onclick="deleteCity()">Delete City</button>
+            <button class = btn onclick="ageProperty()">Property verify</button>
         </div>
     </div>
     <script src="script.js"></script>

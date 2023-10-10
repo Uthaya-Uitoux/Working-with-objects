@@ -1,36 +1,20 @@
 const person ={firstName:"Arun",age:20,city:"Bangalore"};
 console.log(person);
 //let personValue =[person.firstName,person.age,person.city]
-const personValue = [
-    `FirstName: "${person.firstName}"`, 
-    `Age: ${person.age}`, 
-    `City: "${person.city}"`
-];
-console.log(personValue);
-const resultValue=document.querySelector("#object_values")
-resultValue.textContent=personValue.join('  ');
+
+const firstNameValue=document.querySelector("#firstNameValue")
+firstNameValue.textContent=person.firstName;
+const ageValue=document.querySelector("#ageValue")
+ageValue.textContent=person.age;
+const cityValue=document.querySelector("#cityValue")
+cityValue.textContent=person.city;
 
 function addMail(){
     const mailId= document.getElementById("object_mail").value;
+    const wrap = document.getElementById("wrapper");
     //console.log(mailId)
-    let personMail= `Email:"${mailId}"`;
-    let emailValue=personValue.push(personMail);
-   //console.log(personMail)
-    //console.log(emailValue)
-document.getElementById("object_mail").value = "";
-   let finalValue=document.querySelector("#object_values")
-   finalValue.textContent=personValue; 
-}
-function deleteCity() {
-    //if (person && person.city) {
-      let deletedcity=delete person.city;
-        console.log(person); 
-    }
-    let finalValue=document.querySelector("#object_values")
-    finalValue.textContent=personValue; 
-    
-//}
-function ageProperty(obj, propertyName) {
-const hasAgeProperty = ageProperty(person, "age");
-console.log(hasAgeProperty); 
+    person.email=mailId;
+    console.log(person.email = mailId)
+    document.getElementById("object_mail").value = "";
+    wrap.innerHTML += "<div class='obj-item'>Email: <div id='emailValue' class='obj-value'>"+ person.email +"</div></div>"
 }
