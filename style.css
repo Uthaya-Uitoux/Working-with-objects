@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contains{
+    width:400px;
+    border:1px solid;
+    border-color: black;
+    background-color: rgb(35, 233, 233, 0.35);
+}
+.obj-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width:250px;
+    border:1px dotted;
+    border-radius: 5px;
+    border-color: rgb(99, 5, 239);
+    margin:20px;
+    padding:25px;
+    text-align: center;   
+}
+
+.obj-item {
+    display: flex;
+    gap: 10px;
+}
